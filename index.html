@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Sign Up</title>
+	<style type="text/css">
+
+					* {
+		    padding: 0;
+		    margin: 0;
+		}
+
+		form#reg {
+    width: 50%;
+    margin: 0 auto;
+    padding: 12px 13px;
+}
+
+section {
+    padding: 30px 30px;
+    margin: 0 auto;
+}
+
+body {
+    background: #808080;
+}
+
+form#reg {
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px 30px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+input[type="text"].t1 {
+    width: 40%;
+    padding: 12px 0px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid #D5DBDB;
+}
+
+input.t2 {
+    width: 82%;
+    padding: 12px 0px;
+    margin: 5px;
+	border-radius: 5px;
+    border: 2px solid #D5DBDB;
+}
+
+.text1 {
+	width :100%;
+    display: inline-table;
+}
+
+select {
+    padding: 5px 5px;
+    margin: 0px;
+    border-radius: 5px;
+    border: 2px solid #D5DBDB;
+}
+
+.select {
+    margin-left: 5px;
+}
+
+.text2 {
+    float: right;
+    margin-right: 255px;
+    font-size: 12px;
+}
+
+.text3 {
+    font-size: 12px;
+    margin: 5px;
+}
+
+.text4 {
+    padding: 12px 5px;
+    font-size: 22px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+
+p.head {
+    padding: 12px 5px;
+    font-size: 40px;
+    font-family: cursive;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+p.subhead {
+    padding: 0px 5px;
+    font-family: cursive;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+input[type="radio"] {
+    /* padding: 12px 0px; */
+    margin: 15px 5px;
+}
+
+button {
+    padding: 13px 70px;
+    margin: 5px;
+    margin-top: 13px;
+    background-color: #4CAF50;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 10px;
+}
+
+*::-webkit-input-placeholder {
+    padding: 8px 8px;
+}
+
+	</style>
+</head>
+<body>
+<section>
+	<form method="post" id="reg" name="reg" action="" >
+	<div>
+		<div>
+			<div>
+				<div>
+					<div>
+						<p class="head">Sign Up</p>
+  
+						<p class="subhead">It's free and always will be.</p>
+					</div>
+					<div class="text1">
+						<input type="text"  class = "t1" name="firstname"  placeholder="First name"  >
+						<input type="text"  class = "t1" name="lastname"   placeholder="Last name" >
+					</div>
+				</div>
+			</div>
+
+			<div >
+				<div >
+					<div >
+						
+
+					<input type="text"  class = "t2" name="lastname"  placeholder="Last name" >
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+	<div >
+		<div >
+			<div >
+				
+				<input type="text"  class = "t2" name="reg_email" aria-required="1" placeholder="Mobile number or email address" >
+			</div>
+
+		</div>
+	</div>
+
+	<div >
+		<div >
+			<div >
+				
+				<input type="text" class = "t2" name="reg_email_confirmation" aria-required="1" placeholder="Re-enter mobile number or email address"  >
+			</div>
+	
+		</div>
+	</div>
+
+	<div >
+		<div >
+			<div >
+				
+				<input type="text"  class = "t2" name="reg_passwd" aria-required="1" placeholder="New password" ></div>
+
+		</div>
+	</div>
+
+	<div >
+		<div class="text4">Birthday</div>
+			<div class="select">
+				<span >
+				<span><select aria-label="Day" name="birthday_day" id="day" title="Day" >
+						<option value="0" selected="1">Day</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+					  </select>
+
+					  <select aria-label="Month" name="birthday_month" id="month" title="Month" >
+						<option value="0" selected="1">Month</option>
+						<option value="1">Jan</option>
+						<option value="2">Feb</option>
+						<option value="3">Mar</option>
+						<option value="4">Apr</option>
+						<option value="5">May</option>
+						<option value="6">Jun</option>
+						<option value="7">Jul</option>
+						<option value="8">Aug</option>
+						<option value="9">Sept</option>
+						<option value="10">Oct</option>
+						<option value="11">Nov</option>
+						<option value="12">Dec</option>
+					  </select>
+
+					  <select aria-label="Year" name="birthday_year" id="year" title="Year" class="_5dba">
+					   <option value="0" selected="1">Year</option>
+					   <option value="2016">2016</option>
+					   <option value="2015">2015</option>
+					   <option value="2014">2014</option>
+					   <option value="2013">2013</option>
+					  </select>
+				</span>
+				</span>
+				<div class="text2">
+				<a  title="Click for more information" rel="async" role="button">Why do I need to provide my date of <br>birth?</a>
+				</div>
+
+
+		</div>
+    </div>
+
+
+    <div >
+    	<span >
+    		<span>
+    		 	<input type="radio" name="sex" value="1" >
+    		 	<label >Female</label>
+    		</span>
+			<span >
+				<input type="radio" name="sex" value="2" >
+				<label >Male</label>
+			</span>
+		</span>
+
+	</div>
+
+	<div  class="text3">
+		<p >By clicking Sign Up, you agree to our <a href="" target="_blank" rel="nofollow">Terms</a> and that you have <br> read our <a href="" target="_blank" rel="nofollow">Data Policy</a>, including our <a href="" target="_blank" rel="nofollow">Cookie Use</a>.</p>
+
+	</div>
+
+	<div >
+		<button type="submit"  name="websubmit" >Sign Up</button>
+	</div>
+
+  </div>
+</form>
+</section>
+</body>
+</html>
